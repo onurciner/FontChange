@@ -8,6 +8,12 @@
             <enum name="bold" value="2"/>
             <enum name="bold_italic" value="3"/>
         </attr>
+        <attr name="fontDefaultTextView" format="enum">
+            <enum name="asd" value="0"/>
+            <enum name="qwe" value="1"/>
+            <enum name="ert" value="2"/>
+            <enum name="rty" value="3"/>
+        </attr>
     </declare-styleable>
     <declare-styleable name="FButton">
         <attr name="fontButton" format="string"/>

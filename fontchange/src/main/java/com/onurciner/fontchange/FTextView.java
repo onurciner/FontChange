@@ -14,6 +14,7 @@ public class FTextView extends TextView {
 
     String font = null;
     Integer style = 0;
+    Integer defaults = 0;
 
     public FTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -23,6 +24,7 @@ public class FTextView extends TextView {
         try {
             font = a.getString(R.styleable.FTextView_fontTextView);
             style = a.getInteger(R.styleable.FTextView_fontStyleTextView, 0);
+            defaults = a.getInteger(R.styleable.FTextView_fontDefaultTextView, 0);
         } finally {
             a.recycle();
         }
@@ -41,6 +43,10 @@ public class FTextView extends TextView {
                 this.setTypeface(tf);
         }
 
+        if(defaults == 1){
+            Typeface tf = Typeface.createFromAsset(context.getAssets(), "BrightLarch.ttf");
+            this.setTypeface(tf);
+        }
     }
 
 }
