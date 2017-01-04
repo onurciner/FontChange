@@ -22,7 +22,9 @@ public class FEditText extends EditText {
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.FEditText, 0, 0);
 
         try {
-            font = a.getString(R.styleable.FEditText_xfont);
+            if (a != null && a.getString(R.styleable.FEditText_xfont) != null)
+                font = a.getString(R.styleable.FEditText_xfont);
+
             style = a.getInteger(R.styleable.FEditText_xfontStyle, 0);
             family = a.getInteger(R.styleable.FEditText_xfontFamily, 0);
         } finally {
@@ -30,39 +32,37 @@ public class FEditText extends EditText {
         }
 
         Typeface tf = null;
-        if(family == 1){
+        if (family == 1) {
             tf = Typeface.createFromAsset(context.getAssets(), "alien_encounters.ttf");
-        }else if(family == 2){
+        } else if (family == 2) {
             tf = Typeface.createFromAsset(context.getAssets(), "all_ages.ttf");
-        }else if(family == 3){
+        } else if (family == 3) {
             tf = Typeface.createFromAsset(context.getAssets(), "android_style.ttf");
-        }else if(family == 4){
+        } else if (family == 4) {
             tf = Typeface.createFromAsset(context.getAssets(), "black_and_white.ttf");
-        }else if(family == 5){
+        } else if (family == 5) {
             tf = Typeface.createFromAsset(context.getAssets(), "bright_larch.ttf");
-        }else if(family == 6){
+        } else if (family == 6) {
             tf = Typeface.createFromAsset(context.getAssets(), "earth_orbiter.ttf");
-        }else if(family == 7){
+        } else if (family == 7) {
             tf = Typeface.createFromAsset(context.getAssets(), "friday13.ttf");
-        }else if(family == 8){
+        } else if (family == 8) {
             tf = Typeface.createFromAsset(context.getAssets(), "led_display_st.ttf");
-        }else if(family == 9){
+        } else if (family == 9) {
             tf = Typeface.createFromAsset(context.getAssets(), "neuropol.ttf");
-        }else if(family == 10){
+        } else if (family == 10) {
             tf = Typeface.createFromAsset(context.getAssets(), "painter.ttf");
-        }else if(family == 11){
+        } else if (family == 11) {
             tf = Typeface.createFromAsset(context.getAssets(), "prismfont.ttf");
-        }else if(family == 12){
+        } else if (family == 12) {
             tf = Typeface.createFromAsset(context.getAssets(), "sheeping_dogs.ttf");
-        }else if(family == 13){
+        } else if (family == 13) {
             tf = Typeface.createFromAsset(context.getAssets(), "star_jedi.ttf");
-        }else if(family == 14){
+        } else if (family == 14) {
             tf = Typeface.createFromAsset(context.getAssets(), "top_secret.ttf");
-        }else if(family == 15){
+        } else if (family == 15) {
             tf = Typeface.createFromAsset(context.getAssets(), "caviar_dreams.ttf");
-        }else if(family == 16){
-            tf = Typeface.createFromAsset(context.getAssets(), "champagne_limousines.ttf");
-        }else{
+        } else if (family == 16) {
             tf = Typeface.createFromAsset(context.getAssets(), "champagne_limousines.ttf");
         }
 

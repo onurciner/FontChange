@@ -64,10 +64,7 @@ public class FTextView extends TextView {
             tf = Typeface.createFromAsset(context.getAssets(), "caviardreams.ttf");
         }else if(family == 16){
             tf = Typeface.createFromAsset(context.getAssets(), "champagnelimousines.ttf");
-        }else{
-            tf = Typeface.createFromAsset(context.getAssets(), "champagnelimousines.ttf");
         }
-
 
         if (font != null) {
             tf = Typeface.createFromAsset(context.getAssets(), font);
