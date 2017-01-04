@@ -19,12 +19,12 @@ public class FEditText extends EditText {
     public FEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.FEditText, 0, 0);
+        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.XFontChange, 0, 0);
 
         try {
-            font = a.getString(R.styleable.FEditText_fontEditText);
-            style = a.getInteger(R.styleable.FEditText_fontStyleEditText, 0);
-            family = a.getInteger(R.styleable.FEditText_fontFamilyEditText, 0);
+            font = a.getString(R.styleable.XFontChange_XFont);
+            style = a.getInteger(R.styleable.XFontChange_XFontStyle, 0);
+            family = a.getInteger(R.styleable.XFontChange_XFontFamily, 0);
         } finally {
             a.recycle();
         }
