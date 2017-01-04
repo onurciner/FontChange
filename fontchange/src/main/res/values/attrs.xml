@@ -1,30 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="XFontChange">
-        <attr name="xfont" format="string"/>
-        <attr name="xfontStyle" format="enum">
-            <enum name="normal" value="0"/>
-            <enum name="italic" value="1"/>
-            <enum name="bold" value="2"/>
-            <enum name="bold_italic" value="3"/>
-        </attr>
-        <attr name="xfontFamily" format="enum">
-            <enum name="Alien_Encounters" value="1"/>
-            <enum name="All_Ages" value="2"/>
-            <enum name="Android_Style" value="3"/>
-            <enum name="Black_and_White" value="4"/>
-            <enum name="Bright_Larch" value="5"/>
-            <enum name="Earth_Orbiter" value="6"/>
-            <enum name="Friday_13" value="7"/>
-            <enum name="Led_Display" value="8"/>
-            <enum name="Neuropol" value="9"/>
-            <enum name="Painter" value="10"/>
-            <enum name="Prismfont" value="11"/>
-            <enum name="Sheeping_Dogs" value="12"/>
-            <enum name="Star_Jedi" value="13"/>
-            <enum name="Top_Secret" value="14"/>
-            <enum name="Caviar_Dreams" value="15"/>
-            <enum name="Champagne_Limousines" value="16"/>
-        </attr>
+
+    <attr name="xfont" format="string"/>
+    <attr name="xfontStyle" format="enum">
+        <enum name="normal" value="0"/>
+        <enum name="italic" value="1"/>
+        <enum name="bold" value="2"/>
+        <enum name="bold_italic" value="3"/>
+    </attr>
+    <attr name="xfontFamily" format="enum">
+        <enum name="Alien_Encounters" value="1"/>
+        <enum name="All_Ages" value="2"/>
+        <enum name="Android_Style" value="3"/>
+        <enum name="Black_and_White" value="4"/>
+        <enum name="Bright_Larch" value="5"/>
+        <enum name="Earth_Orbiter" value="6"/>
+        <enum name="Friday_13" value="7"/>
+        <enum name="Led_Display" value="8"/>
+        <enum name="Neuropol" value="9"/>
+        <enum name="Painter" value="10"/>
+        <enum name="Prismfont" value="11"/>
+        <enum name="Sheeping_Dogs" value="12"/>
+        <enum name="Star_Jedi" value="13"/>
+        <enum name="Top_Secret" value="14"/>
+        <enum name="Caviar_Dreams" value="15"/>
+        <enum name="Champagne_Limousines" value="16"/>
+    </attr>
+
+    <declare-styleable name="FTextView">
+        <attr name="xfont" />
+        <attr name="xfontStyle"/>
+        <attr name="xfontFamily"/>
+    </declare-styleable>
+    <declare-styleable name="FButton">
+        <attr name="xfont" />
+        <attr name="xfontStyle"/>
+        <attr name="xfontFamily"/>
+    </declare-styleable>
+    <declare-styleable name="FEditText">
+        <attr name="xfont" />
+        <attr name="xfontStyle"/>
+        <attr name="xfontFamily"/>
     </declare-styleable>
 </resources>

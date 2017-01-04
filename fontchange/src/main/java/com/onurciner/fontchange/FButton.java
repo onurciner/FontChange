@@ -19,12 +19,12 @@ public class FButton extends Button {
     public FButton(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.XFontChange, 0, 0);
+        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.FButton, 0, 0);
 
         try {
-            font = a.getString(R.styleable.XFontChange_XFont);
-            style = a.getInteger(R.styleable.XFontChange_XFontStyle, 0);
-            family = a.getInteger(R.styleable.XFontChange_XFontFamily, 0);
+            font = a.getString(R.styleable.FButton_xfont);
+            style = a.getInteger(R.styleable.FButton_xfontStyle, 0);
+            family = a.getInteger(R.styleable.FButton_xfontFamily, 0);
         } finally {
             a.recycle();
         }

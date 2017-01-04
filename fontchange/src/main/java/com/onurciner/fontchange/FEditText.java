@@ -19,33 +19,33 @@ public class FEditText extends EditText {
     public FEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.XFontChange, 0, 0);
+        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.FEditText, 0, 0);
 
         try {
-            font = a.getString(R.styleable.XFontChange_XFont);
-            style = a.getInteger(R.styleable.XFontChange_XFontStyle, 0);
-            family = a.getInteger(R.styleable.XFontChange_XFontFamily, 0);
+            font = a.getString(R.styleable.FEditText_xfont);
+            style = a.getInteger(R.styleable.FEditText_xfontStyle, 0);
+            family = a.getInteger(R.styleable.FEditText_xfontFamily, 0);
         } finally {
             a.recycle();
         }
 
         Typeface tf = null;
         if(family == 1){
-            tf = Typeface.createFromAsset(context.getAssets(), "alienencounters.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "alien_encounters.ttf");
         }else if(family == 2){
-            tf = Typeface.createFromAsset(context.getAssets(), "allages.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "all_ages.ttf");
         }else if(family == 3){
-            tf = Typeface.createFromAsset(context.getAssets(), "androidstyle.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "android_style.ttf");
         }else if(family == 4){
-            tf = Typeface.createFromAsset(context.getAssets(), "blackandwhite.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "black_and_white.ttf");
         }else if(family == 5){
-            tf = Typeface.createFromAsset(context.getAssets(), "brightlarch.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "bright_larch.ttf");
         }else if(family == 6){
-            tf = Typeface.createFromAsset(context.getAssets(), "earthorbiter.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "earth_orbiter.ttf");
         }else if(family == 7){
-            tf = Typeface.createFromAsset(context.getAssets(), "friday.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "friday13.ttf");
         }else if(family == 8){
-            tf = Typeface.createFromAsset(context.getAssets(), "leddisplayst.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "led_display_st.ttf");
         }else if(family == 9){
             tf = Typeface.createFromAsset(context.getAssets(), "neuropol.ttf");
         }else if(family == 10){
@@ -53,17 +53,17 @@ public class FEditText extends EditText {
         }else if(family == 11){
             tf = Typeface.createFromAsset(context.getAssets(), "prismfont.ttf");
         }else if(family == 12){
-            tf = Typeface.createFromAsset(context.getAssets(), "sheepingdogs.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "sheeping_dogs.ttf");
         }else if(family == 13){
-            tf = Typeface.createFromAsset(context.getAssets(), "starjedi.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "star_jedi.ttf");
         }else if(family == 14){
-            tf = Typeface.createFromAsset(context.getAssets(), "topsecret.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "top_secret.ttf");
         }else if(family == 15){
-            tf = Typeface.createFromAsset(context.getAssets(), "caviardreams.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "caviar_dreams.ttf");
         }else if(family == 16){
-            tf = Typeface.createFromAsset(context.getAssets(), "champagnelimousines.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "champagne_limousines.ttf");
         }else{
-            tf = Typeface.createFromAsset(context.getAssets(), "champagnelimousines.ttf");
+            tf = Typeface.createFromAsset(context.getAssets(), "champagne_limousines.ttf");
         }
 
 
