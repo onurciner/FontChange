@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FontChangeSource.iml" filepath="$PROJECT_DIR$/FontChangeSource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fontchange/fontchange.iml" filepath="$PROJECT_DIR$/fontchange/fontchange.iml" />
+    </modules>
+  </component>
+</project>
