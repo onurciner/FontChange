@@ -22,7 +22,9 @@ public class FTextView extends TextView {
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.FTextView, 0, 0);
 
         try {
-            font = a.getString(R.styleable.FTextView_xfont);
+            if(a!=null && a.getString(R.styleable.FTextView_xfont) != null)
+                font = a.getString(R.styleable.FTextView_xfont);
+
             style = a.getInteger(R.styleable.FTextView_xfontStyle, 0);
             family = a.getInteger(R.styleable.FTextView_xfontFamily, 0);
         } finally {
