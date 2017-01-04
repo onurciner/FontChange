@@ -8,11 +8,23 @@
             <enum name="bold" value="2"/>
             <enum name="bold_italic" value="3"/>
         </attr>
-        <attr name="fontDefaultTextView" format="enum">
-            <enum name="asd" value="0"/>
-            <enum name="qwe" value="1"/>
-            <enum name="ert" value="2"/>
-            <enum name="rty" value="3"/>
+        <attr name="fontFamilyTextView" format="enum">
+            <enum name="Alien Encounters" value="1"/>
+            <enum name="All Ages" value="2"/>
+            <enum name="Android Style" value="3"/>
+            <enum name="Black and White" value="4"/>
+            <enum name="Bright Larch" value="5"/>
+            <enum name="Earth Orbiter" value="6"/>
+            <enum name="Friday 13" value="7"/>
+            <enum name="Led Display" value="8"/>
+            <enum name="Neuropol" value="9"/>
+            <enum name="Painter" value="10"/>
+            <enum name="Prismfont" value="11"/>
+            <enum name="Sheeping Dogs" value="12"/>
+            <enum name="Star Jedi" value="13"/>
+            <enum name="Top Secret" value="14"/>
+            <enum name="Caviar Dreams" value="15"/>
+            <enum name="Champagne Limousines" value="16"/>
         </attr>
     </declare-styleable>
     <declare-styleable name="FButton">
@@ -23,6 +35,24 @@
             <enum name="bold" value="2"/>
             <enum name="bold_italic" value="3"/>
         </attr>
+        <attr name="fontFamilyButton" format="enum">
+            <enum name="Alien Encounters" value="1"/>
+            <enum name="All Ages" value="2"/>
+            <enum name="Android Style" value="3"/>
+            <enum name="Black and White" value="4"/>
+            <enum name="Bright Larch" value="5"/>
+            <enum name="Earth Orbiter" value="6"/>
+            <enum name="Friday 13" value="7"/>
+            <enum name="Led Display" value="8"/>
+            <enum name="Neuropol" value="9"/>
+            <enum name="Painter" value="10"/>
+            <enum name="Prismfont" value="11"/>
+            <enum name="Sheeping Dogs" value="12"/>
+            <enum name="Star Jedi" value="13"/>
+            <enum name="Top Secret" value="14"/>
+            <enum name="Caviar Dreams" value="15"/>
+            <enum name="Champagne Limousines" value="16"/>
+        </attr>
     </declare-styleable>
     <declare-styleable name="FEditText">
         <attr name="fontEditText" format="string"/>
@@ -31,6 +61,24 @@
             <enum name="italic" value="1"/>
             <enum name="bold" value="2"/>
             <enum name="bold_italic" value="3"/>
+        </attr>
+        <attr name="fontFamilyEditText" format="enum">
+            <enum name="Alien Encounters" value="1"/>
+            <enum name="All Ages" value="2"/>
+            <enum name="Android Style" value="3"/>
+            <enum name="Black and White" value="4"/>
+            <enum name="Bright Larch" value="5"/>
+            <enum name="Earth Orbiter" value="6"/>
+            <enum name="Friday 13" value="7"/>
+            <enum name="Led Display" value="8"/>
+            <enum name="Neuropol" value="9"/>
+            <enum name="Painter" value="10"/>
+            <enum name="Prismfont" value="11"/>
+            <enum name="Sheeping Dogs" value="12"/>
+            <enum name="Star Jedi" value="13"/>
+            <enum name="Top Secret" value="14"/>
+            <enum name="Caviar Dreams" value="15"/>
+            <enum name="Champagne Limousines" value="16"/>
         </attr>
     </declare-styleable>
 </resources>
