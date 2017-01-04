@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="XFontChange">
-        <attr name="XFont" format="string"/>
-        <attr name="XFontStyle" format="enum">
+        <attr name="xfont" format="string"/>
+        <attr name="xfontStyle" format="enum">
             <enum name="normal" value="0"/>
             <enum name="italic" value="1"/>
             <enum name="bold" value="2"/>
             <enum name="bold_italic" value="3"/>
         </attr>
-        <attr name="XFontFamily" format="enum">
+        <attr name="xfontFamily" format="enum">
             <enum name="Alien_Encounters" value="1"/>
             <enum name="All_Ages" value="2"/>
             <enum name="Android_Style" value="3"/>
