@@ -32,15 +32,15 @@ dependencies {
          android:layout_marginTop="4dp"
          android:layout_marginBottom="4dp" />
          
-#### Selects the font loaded in "Assets->fonts->myfont.tff"
+#### Selects the font loaded in "Assets->fonts->myfont.ttf"
     <com.onurciner.fontchange.FTextView
-         app:xfont="fonts/myfont.tff"         
+         app:xfont="fonts/myfont.ttf"         
          android:text="My Font"
          android:id="@+id/view1" />
          
 #### You can customize the font as you like
     app:xfontFamily="Black_and_White"
-    app:xfont="fonts/myfont.tff"
+    app:xfont="fonts/myfont.ttf"
     app:xfontStyle="bold"
     
 <h3> You can change EditText, TextView and Button fonts </h3>
